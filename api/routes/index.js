@@ -1,5 +1,7 @@
 const bodyParser = require('body-parser');
-const pessoas = require('./pessoasRouter');
+const pessoas = require('./pessoasRoute');
+const niveis = require('./niveisRoute');
+const turmas = require('./turmasRoute')
 
 const routeDefault = '/api';
 
@@ -12,4 +14,6 @@ module.exports = app => {
     });
 
     app.use(routeDefault, pessoas);
+    app.use(routeDefault, niveis);
+    app.use(routeDefault, turmas);
 }
