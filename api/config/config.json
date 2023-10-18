@@ -3,9 +3,10 @@
     "username": "root",
     "password": "root",
     "database": "english_scholl",
-    "host": "127.0.0.1:3307",
+    "host": "localhost",
     "dialect": "mariadb",
-    "operatorsAliases": false
+    "port": 3307,
+    "operatorsAliases": 0
   },
   "test": {
     "username": "root",
